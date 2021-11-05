@@ -2,6 +2,7 @@
 import PrimaryNav from "../components/PrimaryNav.astro";
 
 import Testimonial from "../components/Testimonial.astro";
+import SocialIconBar from "../components/SocialIconBar.astro";
 ---
 
 <!DOCTYPE html>
@@ -82,12 +83,11 @@ import Testimonial from "../components/Testimonial.astro";
           statement="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
         />
       </div>
-      <h3>Icon Bar</h3>
-      <div>
-        <div><a href="#">Visit our Facebook Page (ICON)</a> </div>
-        <div><a href="#">Visit our Instagram Page (ICON)</a> </div>
-        <div><a href="#">Visit our Twitter Page (ICON)</a> </div>
-        <div><a href="#">Visit our Pintrest Page (ICON)</a> </div>
+
+      <div class="bg-cyan-600 text-cyan-400">
+        <h3>Icon Bar</h3>
+        
+        <SocialIconBar />
       </div>
     </div>
   </section>

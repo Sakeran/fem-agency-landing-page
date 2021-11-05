@@ -8,6 +8,14 @@
   color: hsl(var(--clr-white));
 }
 
+.text-cyan-200 {
+  color: hsl(var(--clr-cyan-200));
+}
+
+.text-cyan-400 {
+  color: hsl(var(--clr-cyan-400));
+}
+
 .text-neutral-100 {
   color: hsl(var(--clr-neutral-100));
 }
@@ -22,6 +30,10 @@
 
 .text-neutral-600 {
   color: hsl(var(--clr-neutral-600));
+}
+
+.bg-cyan-600 {
+  background-color: hsl(var(--clr-cyan-600));
 }
 
 

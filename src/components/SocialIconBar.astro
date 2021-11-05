@@ -1,0 +1,27 @@
+---
+import FacebookIcon from "./icons/facebookIcon.astro";
+import TwitterIcon from "./icons/twitterIcon.astro";
+import PintrestIcon from "./icons/pintrestIcon.astro";
+import InstagramIcon from "./icons/instagramIcon.astro";
+---
+
+<style lang="scss">
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    transition: color 0.2s ease-in-out;
+    &:hover, &:focus-visible {
+      color: hsl(var(--clr-white));
+    }
+  }
+</style>
+
+<ul class="flex" style="--gap: 1.75rem;">
+  <li><a class="text-cyan-200" href="#"><span class="sr-only">Visit our Facebook Page</span> <FacebookIcon /></a> </li>
+  <li><a class="text-cyan-200" href="#"><span class="sr-only">Visit our Instagram Page</span> <InstagramIcon /></a> </li>
+  <li><a class="text-cyan-200" href="#"><span class="sr-only">Visit our Twitter Page</span> <TwitterIcon /></a> </li>
+  <li><a class="text-cyan-200" href="#"><span class="sr-only">Visit our Pintrest Page</span> <PintrestIcon /></a> </li>
+</ul>
