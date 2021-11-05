@@ -1,5 +1,7 @@
 ---
 import PrimaryNav from "../components/PrimaryNav.astro";
+
+import Testimonial from "../components/Testimonial.astro";
 ---
 
 <!DOCTYPE html>
@@ -69,17 +71,17 @@ import PrimaryNav from "../components/PrimaryNav.astro";
       <h3>Links</h3>
       <div class="flex">
         <a class="link-underline link-underline-yellow text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More</a>
-        <a class="link-underline link-underline-red text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More (Pink)</a>
+        <a class="link-underline link-underline-red text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More</a>
       </div>
       <h3>Testimonial</h3>
-      <article>
-        <img src="/images/image-emily.jpg" alt="Emily">
-        <p>
-        We put our trust in Sunnyside and they delivered, making sure out needs were met and deadlines were always hit.
-        </p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
-      </article>
+      <div style="width: 33%;">
+        <Testimonial
+          name="Emily R"
+          role="Marketing Director"
+          imgSource="/images/image-emily.jpg"
+          statement="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+        />
+      </div>
       <h3>Icon Bar</h3>
       <div>
         <div><a href="#">Visit our Facebook Page (ICON)</a> </div>
