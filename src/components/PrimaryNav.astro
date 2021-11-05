@@ -3,19 +3,105 @@
     --gap: 3rem;
     list-style: none;
 
+    align-items: center;
+
     a {
       --link-underline-clr: transparent;
       --link-underline-active-clr: hsl(var(--clr-white) / 0.25);
       text-decoration: none;
     }
   }
+
+  button {
+    display: none;
+    padding: 1rem;
+
+    background: 0;
+    border: 0;
+
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 50em) {
+    button {
+      display: block;
+
+      position: relative;
+      left: 2rem;
+    }
+
+    ul {
+      --gap: 2rem;
+
+      position: absolute;
+      background-color: white;
+
+      inset-block-start: 8rem;
+      inset-inline: 2rem;
+
+      padding: 2.375rem; 
+
+      flex-direction: column;
+
+      a {
+        color: hsl(var(--clr-neutral-400));
+
+        &.link-cta {
+          color: hsl(var(--clr-neutral-100));
+          background-color: hsl(var(--clr-yellow));
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        inset-block-start: -1.5em;
+        inset-inline-end: 0;
+
+        width: 1.5em;
+        aspect-ratio: 1;
+        
+        background-color: white;
+
+        clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+      }
+
+      transform: translateY(-4rem);
+      opacity: 0;
+      pointer-events: none;
+
+      transition: transform 0.2s ease-in-out, opacity 0.25s ease-in-out;
+
+      &[data-visible="true"] {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
 </style>
 
 <nav>
-  <ul class="flex fs-400 text-white">
+  <button id="primary-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <span class="sr-only">Toggle Menu</span>
+    <img src="/images/icon-hamburger.svg" alt="">
+  </button>
+
+  <ul id="primary-navigation" class="flex fs-400 text-white" data-visible="false">
     <li><a class="link-underline fs-400 text-white" href="#">About</a></li>
     <li><a class="link-underline fs-400 text-white" href="#">Services</a></li>
     <li><a class="link-underline fs-400 text-white" href="#">Projects</a></li>
-    <li><a class="link-cta uppercase fs-300 text-neutral-100" href="#">Contact</a></li>
+    <li><a class="link-cta ff-serif uppercase fs-300 text-neutral-100" href="#">Contact</a></li>
   </ul>
 </nav>
+
+<script hoist>
+  const toggle = document.getElementById("primary-nav-toggle");
+  const nav = document.getElementById("primary-navigation");
+
+  toggle.addEventListener("click", () => {
+    toggle.setAttribute("aria-expanded", toggle.getAttribute("aria-expanded") == "true" ? "false" : "true");
+    nav.setAttribute("data-visible", nav.getAttribute("data-visible") == "true" ? "false" : "true");
+  });
+</script>
