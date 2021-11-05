@@ -1,4 +1,5 @@
 ---
+import Logo from "../components/icons/logo.astro";
 import PrimaryNav from "../components/PrimaryNav.astro";
 
 import Testimonial from "../components/Testimonial.astro";
@@ -61,10 +62,8 @@ import SocialIconBar from "../components/SocialIconBar.astro";
 
       <h3>Header and Nav</h3>
       
-      <div style="background-color: #4abdf2; padding: 1rem;">
-        <img src="/images/logo.svg" alt="Sunnyside">
-
-
+      <div class="text-white" style="background-color: #4abdf2; padding: 1rem;">
+        <Logo />
         <PrimaryNav></PrimaryNav>
 
       </div>
@@ -84,9 +83,9 @@ import SocialIconBar from "../components/SocialIconBar.astro";
         />
       </div>
 
-      <div class="bg-cyan-600 text-cyan-400">
+      <div class="bg-cyan-600 text-cyan-300">
         <h3>Icon Bar</h3>
-        
+        <Logo />
         <SocialIconBar />
       </div>
     </div>
