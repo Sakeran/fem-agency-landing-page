@@ -1,0 +1,28 @@
+/////////////////////////
+// Compositions
+/////////////////////////
+
+// Layout
+
+.center {
+  box-sizing: content-box;
+  max-width: 1110px;
+  margin-inline: auto;
+
+  padding-inline: 1rem;
+}
+
+
+
+// Utility
+
+.flow {
+  & > * + * {
+    margin-top: var(--flow-space, 1rem);
+  }
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}

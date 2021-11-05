@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href={Astro.resolve("../styles/main.css")}>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;600;700&family=Bellefair&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
+
+  <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+  <title>Page Design</title>
+</head>
+<body class="flow" style="--flow-space: 8rem;">
+  
+  <header class="center">
+    <h1>Sunnyside Design Page</h1>
+  </header>
+
+  <section id="typography" class="center">
+    <div class="flow" style="--flow-space: 1rem;">
+      <h2 class="fs-700 text-neutral-400">Typography</h2>
+
+      <h3 class="text-neutral-300">Font Families</h3>
+
+      <p>Barlow - 600</p>
+
+      <p class="ff-serif fw-700">Fraunces - 700</p>
+      <p class="ff-serif fw-900">Fraunces - 900</p>
+      
+      <p class="fs-400">Body text - Barlow, SemiBold, 18px, 30px Line Height (1.6).</p>
+      <p class="fs-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorem!
+        Ex explicabo ipsum omnis, eos nihil pariatur modi dicta provident tempore officia ipsa aliquam necessitatibus.
+        Voluptatem, ab recusandae fugit accusantium mollitia voluptate rem atque voluptates reprehenderit quibusdam quasi
+        consequuntur culpa eum enim ut non dolorum pariatur accusamus doloribus harum temporibus!
+      </p>
+
+      <h3 class="text-neutral-300">Headers</h3>
+
+      <h4 class="ff-serif fs-900 fw-900">Main Header - Fraunces, Black, 56px, 8.75px Spacing</h4>
+
+      <h4 class="ff-serif fs-700 fw-900">Section Header - Fraunces, Black, 40px, -0.3px Spacing</h4>
+    
+    </div>
+  </section>
+
+
+  <section id="components" class="center">
+    <div class="flow" style="--flow-space: 0.5rem;">
+      <h2 class="fs-700 text-neutral-400">Components</h2>
+
+      <h3>Header and Nav</h3>
+      
+      <div style="background-color: #4abdf2; padding: 1rem;">
+        <img src="/images/logo.svg" alt="Sunnyside">
+
+
+        <nav>
+          <ul class="flex">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact (CTA)</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <h3>Links</h3>
+      <div class="flex">
+        <a class="link-underline link-underline-yellow text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More</a>
+        <a class="link-underline link-underline-red text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More (Pink)</a>
+      </div>
+      <h3>Testimonial</h3>
+      <article>
+        <img src="/images/image-emily.jpg" alt="Emily">
+        <p>
+        We put our trust in Sunnyside and they delivered, making sure out needs were met and deadlines were always hit.
+        </p>
+        <p>Emily R.</p>
+        <p>Marketing Director</p>
+      </article>
+      <h3>Icon Bar</h3>
+      <div>
+        <div><a href="#">Visit our Facebook Page (ICON)</a> </div>
+        <div><a href="#">Visit our Instagram Page (ICON)</a> </div>
+        <div><a href="#">Visit our Twitter Page (ICON)</a> </div>
+        <div><a href="#">Visit our Pintrest Page (ICON)</a> </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

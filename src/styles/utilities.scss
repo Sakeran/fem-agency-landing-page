@@ -1,0 +1,86 @@
+/////////////////////////
+// Utilities
+/////////////////////////
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.link-underline {
+  --link-underline-clr: #cccccc;
+  --link-underline-active-clr: #aaaaaa;
+
+  &-yellow {
+    --link-underline-clr: hsl(var(--clr-yellow) / 0.25);
+    --link-underline-active-clr: hsl(var(--clr-yellow));
+  }
+
+  &-red {
+    --link-underline-clr: hsl(var(--clr-red) / 0.25);
+    --link-underline-active-clr: hsl(var(--clr-red));
+  }
+
+  position: relative;
+  z-index: 0;
+
+  display: inline-block;
+  padding-inline: 0.5em;
+
+  text-decoration: none;
+
+
+  &::before {
+    content: "";
+    
+    display: block;
+    height: 0.66em;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    
+    background-color: var(--link-underline-clr, #cccccc);
+
+    border-radius: 100vw;
+  }
+
+  &::after {
+    content: "";
+    
+    display: block;
+    height: 0.75em;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    border-radius: 100vw;
+    
+    background-color: transparent;
+    
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.2s ease-in-out, background-color 0.15s ease;
+  }
+
+  &:hover, &:focus-visible {
+    &::after {
+      transform: scaleX(1);
+      background-color: var(--link-underline-active-clr);
+    }
+  }
+  
+}
