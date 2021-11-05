@@ -1,0 +1,59 @@
+---
+import Logo from "../components/icons/logo.astro";
+
+import PrimaryNav from "../components/PrimaryNav.astro";
+---
+
+<style lang="scss">
+    .hero {
+        --flow-space: 3.25rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        padding-bottom: 12rem;
+
+        background-color: #3cbdfe;
+        background-image: url("/images/mobile/image-header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        @media screen and (min-width: 35em) {
+            --flow-space: 4rem;
+            background-image: url("/images/desktop/image-header.jpg");
+            padding-bottom: 20rem;
+            
+        }
+
+        @media screen and (min-width: 50em) {
+            background-size: min(160vw, 1440px);
+        }
+    }
+
+    header {
+        width: 100%;
+        padding: 2.5rem 3rem 0;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+      padding-inline: 1rem;
+      line-height: 1.1;
+    }
+</style>
+
+<div class="hero flow">
+    <header class="flex text-white">
+        <Logo />
+        <PrimaryNav />
+    </header>
+
+    <p class="text-white ff-serif fs-900 fw-900 uppercase letter-spacing-2">We are creatives</p>
+    <img src="/images/icon-arrow-down.svg" alt="">
+</div>
