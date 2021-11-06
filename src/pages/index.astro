@@ -1,7 +1,9 @@
 ---
+import Logo from "../components/icons/logo.astro";
 import Hero from "../sections/hero.astro";
 
 import Testimonial from "../components/Testimonial.astro";
+import SocialIconBar from "../components/SocialIconBar.astro";
 ---
 
 <!DOCTYPE html>
@@ -139,5 +141,22 @@ import Testimonial from "../components/Testimonial.astro";
     </div>
 
   </section>
+
+  <footer class="footer bg-cyan-600 text-cyan-200">
+    <div class="center flex">
+      <Logo />
+
+      <nav>
+        <ul class="flex">
+          <li><a class="text-cyan-400 fs-400" href="#">About</a></li>
+          <li><a class="text-cyan-400 fs-400" href="#">Services</a></li>
+          <li><a class="text-cyan-400 fs-400" href="#">Projects</a></li>
+        </ul>
+      </nav>
+
+      <SocialIconBar />
+    
+    </div>
+  </footer>
 </body>
 </html>
