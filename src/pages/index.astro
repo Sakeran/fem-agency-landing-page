@@ -1,5 +1,7 @@
 ---
 import Hero from "../sections/hero.astro";
+
+import Testimonial from "../components/Testimonial.astro";
 ---
 
 <!DOCTYPE html>
@@ -75,5 +77,30 @@ import Hero from "../sections/hero.astro";
     </div>
   </div>
 
+
+  <div class="testimonials center flow">
+    <h2 class="ff-serif fs-500 text-neutral-600 uppercase letter-spacing-2 fw-900 ta-center">Testimonials</h2>
+
+    <div class="switcher justify-center" style="--switcher-gap: 2rem">
+      <Testimonial
+        name="Emily R"
+        role="Marketing Director"
+        imgSource="/images/image-emily.jpg"
+        statement="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+      />
+      <Testimonial
+        name="Thomas S"
+        role="Chief Operating Officer"
+        imgSource="/images/image-thomas.jpg"
+        statement="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
+      />
+      <Testimonial
+        name="Jennie F."
+        role="Business Owner"
+        imgSource="/images/image-jennie.jpg"
+        statement="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+      />
+    </div>
+  </div>
 </body>
 </html>

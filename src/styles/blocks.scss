@@ -72,3 +72,13 @@
     
   }
 }
+
+.testimonials {
+  --flow-space: 4rem;
+  padding: 4rem 1.5rem;
+  
+  @media screen and (min-width: 45em) {
+    --flow-space: 5rem;
+    padding: 10rem 1.5rem;
+  }
+}

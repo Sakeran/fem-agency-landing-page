@@ -19,8 +19,13 @@
 }
 
 .letter-spacing-2 {
+  letter-spacing: 5px;
+}
+
+.letter-spacing-3 {
   letter-spacing: 8.75px;
 }
+
 
 // Font sizes
 
@@ -68,3 +73,6 @@
   text-transform: uppercase;
 }
 
+.ta-center {
+  text-align: center;
+}
