@@ -1,0 +1,74 @@
+/////////////////////////
+// Blocks
+/////////////////////////
+
+.about-content {
+  --flow-space: 2rem;
+
+  max-width: 28rem;
+  padding: 4rem 2rem;
+
+  margin-inline: auto;
+
+  text-align: center;
+
+  a {
+    margin-top: 2.5rem;
+  }
+
+  &-right {
+    @extend .about-content;
+  }
+
+  @media screen and (min-width: 45em) {
+    text-align: start;
+
+    margin-inline: auto min(5vw, 7rem);
+
+    &-right {
+      margin-inline: min(5vw, 7rem) auto;
+    }
+  }
+}
+
+.service-section {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
+  & > * {
+    --flow-space: 2rem;
+
+    padding-inline: 1.5rem;
+    padding-block: 36rem 3.75rem;
+    max-width: 22rem;
+  }
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-design {
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+  }
+
+  &-photography {
+    background-image: url("/images/mobile/image-photography.jpg");
+  }
+  
+  @media screen and (min-width: 45em) {
+    & > * {
+      padding-block: 33rem 3.375rem;
+    }
+
+    &-design {
+      background-image: url("/images/desktop/image-graphic-design.jpg");
+    }
+  
+    &-photography {
+      background-image: url("/images/desktop/image-photography.jpg");
+    }
+    
+  }
+}

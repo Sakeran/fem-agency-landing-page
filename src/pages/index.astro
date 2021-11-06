@@ -19,6 +19,61 @@ import Hero from "../sections/hero.astro";
 </head>
 
 <body>
-    <Hero />
+  <Hero />
+
+  <div class="split-2-right">
+    <div>
+      <picture class="img-cover">
+        <source media="(min-width: 50em)" srcset="/images/desktop/image-transform.jpg" />
+        <img src="/images/mobile/image-transform.jpg" alt="an egg">
+      </picture>
+    </div>
+
+    <div>
+      <div class="v-center">
+        <div class="about-content flow">
+          <h2 class="ff-serif fs-700 text-neutral-100 fw-900">Transform your brand</h2>
+          <p class="fs-400 text-neutral-400">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a class="link-underline link-underline-yellow text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="split-2">
+    <div>
+      <picture class="img-cover">
+        <source media="(min-width: 50em)" srcset="/images/desktop/image-stand-out.jpg" />
+        <img src="/images/mobile/image-stand-out.jpg" alt="a ceramic red wine glass">
+      </picture>
+    </div>
+    
+    <div>
+      <div class="v-center">
+        <div class="about-content-right flow">
+          <h2 class="ff-serif fs-700 text-neutral-100 fw-900">Stand out to the right audience</h2>
+          <p class="fs-400 text-neutral-400">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+          <a class="link-underline link-underline-red text-neutral-100 ff-serif fw-900 uppercase letter-spacing-1 fs-300" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="split-2">
+    <div class="service-section service-section-design">
+      <div class="flow">
+        <h2 class="ff-serif fs-600 fw-900 text-cyan-200">Graphic Design</h2>
+        <p class="fs-300 text-cyan-200">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+    </div>
+
+    <div class="service-section service-section-photography">
+      <div class="flow">
+        <h2 class="ff-serif fs-600 fw-900 text-blue-200">Photography</h2>
+        <p class="fs-300 text-blue-300">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
