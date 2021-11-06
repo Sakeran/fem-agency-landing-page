@@ -1,42 +1,13 @@
-# Welcome to [Astro](https://astro.build)
+# fem-agency-landing-page
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/snowpackjs/astro/tree/latest/examples/starter)
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Notes
 
-## 🚀 Project Structure
+(November 5th, 2021)
 
-Inside of your Astro project, you'll see the following folders and files:
+I made it a point to focus on my overall workflow for this challenge, putting everything I picked up in my [previous challenge](https://github.com/Sakeran/fem-space-tourism-site) into practice. Focusing on the planning stage up front (and building out the components first) took a little more time than I'd anticipated, but I found that once I'd gotten through that, the time it took to build out the actual page was less than half of what I'd normally spend.
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Granted, this design wasn't especially difficult to implment, but I think the takeaway here is that I need to work on cutting down the time taken during the planning stage. Some of that will just be a matter of practice - quickly identifying things like spacing and colors - but on a more practical level, I should try to start working from a basic set of utility and layout classes where possible. While there is a certain sense of satisfaction that comes with writing custom CSS for each project, it does lead to me doing a lot of duplicate, time-wasting work.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm run dev`   | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
+[A live version of this project can be found here.](https://interesting-club.surge.sh/)
