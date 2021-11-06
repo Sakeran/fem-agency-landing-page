@@ -82,3 +82,16 @@
     padding: 10rem 1.5rem;
   }
 }
+
+.image-gallery {
+  --gap: 0;
+  flex-wrap: wrap;
+
+  & > * {
+    flex-basis: 50%;
+  }
+
+  @media screen and (min-width: 45em) {
+    flex-wrap: nowrap;
+  }
+}
